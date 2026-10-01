@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Aurum Holdings | Junior Gold Investments</title>
+<meta name="description" content="Aurum Holdings focuses on junior gold companies, exploration-stage opportunities and emerging gold projects, with particular interest in companies below $50 million in market capitalization.">
+<meta name="robots" content="index,follow">
+<meta property="og:title" content="Aurum Holdings | Junior Gold Investments">
+<meta property="og:description" content="Junior gold investments, selected projects and investment focus from Aurum Holdings.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#102a3d;--gold:#b58a22;--white:#fff;--soft:#f7f8f8;--ink:#18232b;--muted:#68747c;--line:#e5e8ea;--max:1180px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:'Montserrat',Arial,Helvetica,sans-serif;color:var(--ink);background:#fff;font-size:16px;line-height:1.6}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+button,input,textarea{font:inherit}
+.wrap{width:min(var(--max),calc(100% - 40px));margin:auto}
+h1,h2,h3,p{margin-top:0}
+h1,h2{font-size:clamp(30px,4vw,52px);line-height:1.08;letter-spacing:-.025em}
+h3{font-size:22px}
+p{color:var(--muted)}
+header{position:sticky;top:0;z-index:30;background:rgba(255,255,255,.97);border-bottom:1px solid var(--line);backdrop-filter:blur(10px)}
+nav{height:82px;display:flex;align-items:center;justify-content:space-between;gap:28px}
+.brand img{width:230px;height:72px;object-fit:contain;object-position:left center}
+.links{display:flex;align-items:center;gap:28px;font-size:14px;font-weight:600}
+.links a:hover{color:var(--gold)}
+.navcta{border:1px solid var(--gold);padding:10px 17px}
+.menu{display:none;background:none;border:0;font-size:25px;color:var(--navy)}
+.hero{min-height:610px;display:flex;align-items:center;background:linear-gradient(100deg,rgba(16,42,61,.97),rgba(16,42,61,.86));color:#fff}
+.hero-inner{padding:92px 0;max-width:900px}
+.eyebrow{font-size:13px;letter-spacing:.16em;text-transform:uppercase;font-weight:600;color:#d4ae4a}
+.hero h1{max-width:790px;margin:14px 0 22px;color:#fff}
+.hero p{max-width:650px;color:#d9e0e4}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 20px;border:1px solid var(--gold);background:var(--gold);color:#fff;font-weight:600}
+.btn.alt{background:transparent;border-color:#fff}
+.facts{display:flex;gap:42px;flex-wrap:wrap;margin-top:52px;padding-top:22px;border-top:1px solid rgba(255,255,255,.18)}
+.fact strong{display:block;color:#d4ae4a;font-size:22px}
+.fact span{font-size:13px;color:#d9e0e4}
+section{padding:88px 0}
+.intro{display:grid;grid-template-columns:.8fr 1.2fr;gap:80px;align-items:start}
+.intro-copy{border-left:2px solid var(--gold);padding-left:26px}
+.intro-copy p{font-size:18px;color:#354750;margin-bottom:0}
+.focus{background:var(--soft)}
+.focus-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:70px;align-items:center}
+.criteria{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--line);background:#fff}
+.criterion{padding:23px;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+.criterion:nth-child(2n){border-right:0}
+.criterion:nth-last-child(-n+2){border-bottom:0}
+.criterion strong{display:block;color:var(--navy);margin-bottom:4px}
+.criterion span{font-size:14px;color:var(--muted)}
+.projects{overflow:hidden}
+.project-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:28px}
+.project-head p{max-width:480px;margin-bottom:4px}
+.project-controls{display:flex;gap:8px;flex:0 0 auto}
+.project-arrow{width:42px;height:42px;border:1px solid var(--line);background:#fff;color:var(--navy);cursor:pointer;font-size:20px}
+.project-arrow:hover{border-color:var(--gold);color:var(--gold)}
+.project-rail{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding:2px 2px 18px;cursor:grab}
+.project-rail::-webkit-scrollbar{display:none}
+.project-card{min-width:340px;max-width:340px;scroll-snap-align:start;border:1px solid var(--line);background:#fff;display:flex;flex-direction:column;transition:.2s}
+.project-card:hover{transform:translateY(-3px);border-color:#d4c18d;box-shadow:0 10px 30px rgba(16,42,61,.07)}
+.project-top{height:9px;background:var(--navy)}
+.project-body{padding:27px;min-height:230px;display:flex;flex-direction:column}
+.project-num{font-size:13px;color:var(--gold);font-weight:600;letter-spacing:.12em}
+.project-card h3{color:var(--navy);margin:18px 0 8px}
+.project-card p{font-size:14px;margin-bottom:24px}
+.project-link{margin-top:auto;padding-top:18px;border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;font-size:14px;font-weight:600;color:var(--navy)}
+.project-link span:last-child{color:var(--gold);font-size:20px}
+.rail-note{font-size:12px;margin:0;color:#8a949a}
+.history{background:var(--navy);color:#fff}
+.history-inner{max-width:980px}
+.history h2{color:#fff;margin:0 0 18px}
+.history p{color:#d6dee3;font-size:18px;margin:0}
+.contact-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:70px}
+.contact h2{color:var(--navy)}
+.contact-note{max-width:470px}
+form{display:grid;grid-template-columns:1fr 1fr;gap:13px;background:var(--soft);padding:30px}
+input,textarea{padding:14px;border:1px solid #d9dee1;background:#fff;outline:none}
+input:focus,textarea:focus{border-color:var(--gold)}
+textarea{grid-column:1/-1;min-height:125px;resize:vertical}
+.send{grid-column:1/-1;background:var(--navy);color:#fff;border:0;padding:14px;font-weight:600;cursor:pointer}
+.form-note{grid-column:1/-1;font-size:12px;margin:0}
+footer{border-top:1px solid var(--line);padding:28px 0}
+.foot{display:flex;justify-content:space-between;gap:20px;align-items:center}
+.foot img{width:135px}
+.foot p{font-size:12px;margin:0}
+@media(max-width:850px){
+ .links{display:none}.menu{display:block}
+ .links.open{display:flex;position:absolute;left:0;right:0;top:82px;background:#fff;flex-direction:column;align-items:stretch;padding:22px 20px;border-bottom:1px solid var(--line)}
+ .intro,.focus-grid,.contact-grid{grid-template-columns:1fr;gap:36px}
+ .project-head{align-items:center}
+ .project-card{min-width:310px;max-width:310px}
+}
+@media(max-width:560px){
+ .wrap{width:calc(100% - 28px)}nav{height:72px}.brand img{width:185px;height:58px}.links.open{top:72px}
+ .hero{min-height:560px}.hero-inner{padding:70px 0}.facts{gap:22px}
+ .criteria{grid-template-columns:1fr}.criterion,.criterion:nth-child(2n){border-right:0;border-bottom:1px solid var(--line)}.criterion:last-child{border-bottom:0}
+ section{padding:64px 0}
+ .project-head{display:block}.project-controls{margin-top:18px}.project-card{min-width:84vw;max-width:84vw}
+ form{grid-template-columns:1fr;padding:22px}textarea,.send,.form-note{grid-column:auto}
+ .foot{flex-direction:column;align-items:flex-start}.actions .btn{width:100%}
+}
+</style>
+</head>
+<body>
+<header>
+ <div class="wrap">
+  <nav>
+   <a class="brand" href="#top" aria-label="Aurum Holdings home"><img src="aurum-logo.png" alt="Aurum Holdings"></a>
+   <div class="links" id="links">
+    <a href="#focus">Focus</a><a href="#projects">Projects</a><a href="#history">History</a><a class="navcta" href="#contact">Contact</a>
+   </div>
+   <button class="menu" id="menu" aria-label="Open navigation">☰</button>
+  </nav>
+ </div>
+</header>
+
+<main id="top">
+<section class="hero">
+ <div class="wrap hero-inner">
+  <div class="eyebrow">Aurum Holdings · Junior Gold</div>
+  <h1>I invest in emerging gold opportunities.</h1>
+  <p>I focus on junior gold companies with strong projects, clear catalysts and market capitalizations generally below $50 million.</p>
+  <div class="actions"><a class="btn" href="#projects">View Projects</a><a class="btn alt" href="#contact">Get in Touch</a></div>
+  <div class="facts">
+   <div class="fact"><strong>&lt; $50M</strong><span>Market-cap focus</span></div>
+   <div class="fact"><strong>Gold</strong><span>Primary commodity</span></div>
+   <div class="fact"><strong>Junior</strong><span>Exploration & development</span></div>
+  </div>
+ </div>
+</section>
+
+<section>
+ <div class="wrap intro">
+  <div><h2>Bal Gill</h2></div>
+  <div class="intro-copy"><p>I look for junior gold opportunities where the project, people, capital structure and upcoming milestones create a compelling investment case. Aurum Holdings is where I share the companies and projects I am following and investing in.</p></div>
+ </div>
+</section>
+
+<section class="focus" id="focus">
+ <div class="wrap focus-grid">
+  <div><h2>What I Look For</h2><p>A disciplined focus on junior gold companies and emerging projects.</p></div>
+  <div class="criteria">
+   <div class="criterion"><strong>Market Capitalization</strong><span>Generally below $50M</span></div>
+   <div class="criterion"><strong>Commodity</strong><span>Gold-focused opportunities</span></div>
+   <div class="criterion"><strong>Stage</strong><span>Exploration & development</span></div>
+   <div class="criterion"><strong>Selection</strong><span>Project, team, structure & catalysts</span></div>
+  </div>
+ </div>
+</section>
+
+<section class="projects" id="projects">
+ <div class="wrap">
+  <div class="project-head">
+   <div><h2>Projects</h2><p>A look at junior exploration companies and gold projects in the market.</p></div>
+   <div class="project-controls">
+    <button class="project-arrow" id="prevProject" aria-label="Previous projects">←</button>
+    <button class="project-arrow" id="nextProject" aria-label="Next projects">→</button>
+   </div>
+  </div>
+
+  <div class="project-rail" id="projectRail">
+   <a class="project-card" href="https://precoregold.com/" target="_blank" rel="noopener">
+    <div class="project-top"></div><div class="project-body"><span class="project-num">01</span><h3>Precore Gold</h3><p>Junior gold exploration with projects in Peru and Quebec.</p><div class="project-link"><span>View Company</span><span>↗</span></div></div>
+   </a>
+   <a class="project-card" href="https://www.rockyshoregold.com/" target="_blank" rel="noopener">
+    <div class="project-top"></div><div class="project-body"><span class="project-num">02</span><h3>Rocky Shore Gold</h3><p>Gold exploration focused on the Gold Anchor Project in Newfoundland.</p><div class="project-link"><span>View Company</span><span>↗</span></div></div>
+   </a>
+   <a class="project-card" href="https://syllagold.com/" target="_blank" rel="noopener">
+    <div class="project-top"></div><div class="project-body"><span class="project-num">03</span><h3>Sylla Gold</h3><p>Junior gold exploration focused on properties in West Africa.</p><div class="project-link"><span>View Company</span><span>↗</span></div></div>
+   </a>
+   <a class="project-card" href="https://goldterracorp.com/" target="_blank" rel="noopener">
+    <div class="project-top"></div><div class="project-body"><span class="project-num">04</span><h3>Gold Terra</h3><p>Advanced-stage junior gold exploration in Yellowknife, Northwest Territories.</p><div class="project-link"><span>View Company</span><span>↗</span></div></div>
+   </a>
+   <a class="project-card" href="https://nvx.gold/" target="_blank" rel="noopener">
+    <div class="project-top"></div><div class="project-body"><span class="project-num">05</span><h3>NV Gold</h3><p>Gold exploration across a portfolio of prospective properties in Nevada.</p><div class="project-link"><span>View Company</span><span>↗</span></div></div>
+   </a>
+  </div>
+  <p class="rail-note">Use the arrows, drag, or swipe to explore projects.</p>
+ </div>
+</section>
+
+<section class="history" id="history">
+ <div class="wrap history-inner">
+  <h2>Investment History</h2>
+  <p>My approach has been shaped by investing in emerging opportunities where strong fundamentals, capable management and meaningful project milestones can create long-term value. I continue to apply that same discipline when reviewing junior gold companies today.</p>
+ </div>
+</section>
+
+<section class="contact" id="contact">
+ <div class="wrap contact-grid">
+  <div><h2>Contact</h2><p class="contact-note">If you would like to introduce a junior gold company, share a project or discuss an investment opportunity, send me a message.</p></div>
+  <form id="form">
+   <input id="name" required placeholder="Name" aria-label="Name">
+   <input id="email" type="email" required placeholder="Email" aria-label="Email">
+   <input id="company" placeholder="Company" aria-label="Company">
+   <input id="phone" placeholder="Phone" aria-label="Phone">
+   <textarea id="message" required placeholder="Message" aria-label="Message"></textarea>
+   <button class="send" type="submit">Send Inquiry</button>
+   <p class="form-note">Contact delivery will be connected before launch.</p>
+  </form>
+ </div>
+</section>
+</main>
+
+<footer><div class="wrap foot"><img src="aurum-logo.png" alt="Aurum Holdings"><p>© 2026 Aurum Holdings · Junior gold investment information.</p></div></footer>
+
+<script>
+const m=document.getElementById('menu'),l=document.getElementById('links');
+m.onclick=()=>l.classList.toggle('open');
+l.querySelectorAll('a').forEach(a=>a.onclick=()=>l.classList.remove('open'));
+
+const rail=document.getElementById('projectRail');
+document.getElementById('nextProject').onclick=()=>rail.scrollBy({left:358,behavior:'smooth'});
+document.getElementById('prevProject').onclick=()=>rail.scrollBy({left:-358,behavior:'smooth'});
+
+let down=false,startX=0,startScroll=0;
+rail.addEventListener('mousedown',e=>{down=true;startX=e.pageX;startScroll=rail.scrollLeft;rail.style.cursor='grabbing'});
+window.addEventListener('mouseup',()=>{down=false;rail.style.cursor='grab'});
+rail.addEventListener('mousemove',e=>{if(!down)return;e.preventDefault();rail.scrollLeft=startScroll-(e.pageX-startX)});
+
+document.getElementById('form').onsubmit=e=>{
+ e.preventDefault();
+ alert('Contact form is ready for the approved Aurum Holdings email or form service.');
+};
+</script>
+</body>
+</html>
